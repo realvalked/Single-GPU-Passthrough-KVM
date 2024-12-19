@@ -43,6 +43,10 @@ Also make sure to configure all the necessary BIOS settings before proceeding!!!
 https://github.com/gnif/vendor-reset
 Check if you properly installed it by doing `dkms status` <br>
 output should be something like: `vendor-reset/0.1.1, (your kernel here), x86_64: installed` along with other dkms modules if you have any installed <br>
+`sudo dmesg | grep reset` output should be something like: <br>
+`vendor_reset: loading out-of-tree module taints kernel.` <br>
+`vendor_reset: module verification failed: signature and/or required key missing - tainting kernel` <br>
+`vendor_reset_hook: installed` <br>
 Note: I did try using the AUR vendor-reset packages, however the one that worked best for me was the one directly from the repository, cloned and built. <br>
 Note 2: if you have any issues building on kernel 6.12, you have to change a line in `src/amd/amdgpu/atom.c`, according to this github issue: https://github.com/gnif/vendor-reset/issues/87 (personally I had to do this)
 
