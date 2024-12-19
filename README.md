@@ -1,4 +1,6 @@
 # Single-GPU-Passthrough-KVM
+LAST UPDATED: 19th December, 2024
+
 Settings that helped me fix the dreaded reset bug on an RX580 <br>
 GPU: XFX Radeon RX 580 GTS XXX, 8GB with vbios dump attached to virt-manager<br>
 CPU: Ryzen 5 4500 <br>
